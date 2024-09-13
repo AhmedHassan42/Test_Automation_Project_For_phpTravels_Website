@@ -1,0 +1,3 @@
+[INFO] 13-09-2024 06:36:40 [main] [Listeners.ITestmethod.onTestStart(ITestmethod.java:9)] - Test case CheckSearchForFirstClassTypeResult started
+[INFO] 13-09-2024 06:36:52 [main] [Pages.P04FlightsPage.CheckFlightTypeResult(P04FlightsPage.java:72)] - Type of flight is: First
+[INFO] 13-09-2024 06:36:52 [main] [Listeners.ITestmethod.onTestSuccess(ITestmethod.java:13)] - CheckSearchForFirstClassTypeResult Test pass

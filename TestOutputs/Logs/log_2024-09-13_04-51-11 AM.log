@@ -1,0 +1,16 @@
+[INFO] 13-09-2024 04:51:11 [main] [Listeners.ITestmethod.onTestStart(ITestmethod.java:9)] - Test case ValidLoginTC started
+[INFO] 13-09-2024 04:51:13 [main] [Listeners.ITestmethod.onTestSuccess(ITestmethod.java:13)] - ValidLoginTC Test pass
+[INFO] 13-09-2024 04:51:19 [main] [Listeners.ITestmethod.onTestStart(ITestmethod.java:9)] - Test case CheckLogoRedirection started
+[INFO] 13-09-2024 04:51:22 [main] [Listeners.ITestmethod.onTestSuccess(ITestmethod.java:13)] - CheckLogoRedirection Test pass
+[INFO] 13-09-2024 04:51:28 [main] [Listeners.ITestmethod.onTestStart(ITestmethod.java:9)] - Test case CheckAlertMessage started
+[INFO] 13-09-2024 04:51:35 [main] [Tests.TC03HomePage.CheckAlertMessage(TC03HomePage.java:75)] - Flying City and Destination City Can`t be same
+[INFO] 13-09-2024 04:51:35 [main] [Listeners.ITestmethod.onTestSuccess(ITestmethod.java:13)] - CheckAlertMessage Test pass
+[INFO] 13-09-2024 04:51:41 [main] [Listeners.ITestmethod.onTestStart(ITestmethod.java:9)] - Test case CheckFoundFlightIsDisplayed started
+[INFO] 13-09-2024 04:51:53 [main] [Tests.TC03HomePage.CheckFoundFlightIsDisplayed(TC03HomePage.java:59)] - true
+[INFO] 13-09-2024 04:51:53 [main] [Listeners.ITestmethod.onTestSuccess(ITestmethod.java:13)] - CheckFoundFlightIsDisplayed Test pass
+[INFO] 13-09-2024 04:52:00 [main] [Listeners.ITestmethod.onTestStart(ITestmethod.java:9)] - Test case CheckNotFoundFlightIsDisplayed started
+[INFO] 13-09-2024 04:52:11 [main] [Listeners.ITestmethod.onTestSuccess(ITestmethod.java:13)] - CheckNotFoundFlightIsDisplayed Test pass
+[INFO] 13-09-2024 04:52:17 [main] [Listeners.ITestmethod.onTestStart(ITestmethod.java:9)] - Test case CheckFlightsResult started
+[INFO] 13-09-2024 04:52:30 [main] [Tests.TC04FlightsPage.CheckFlightsResult(TC04FlightsPage.java:48)] - true
+[INFO] 13-09-2024 04:52:30 [main] [Tests.TC04FlightsPage.CheckFlightsResult(TC04FlightsPage.java:49)] - Dubai - Cairo
+[INFO] 13-09-2024 04:52:30 [main] [Listeners.ITestmethod.onTestSuccess(ITestmethod.java:13)] - CheckFlightsResult Test pass

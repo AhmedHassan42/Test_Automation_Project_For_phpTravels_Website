@@ -1,0 +1,3 @@
+[INFO] 13-09-2024 04:07:55 [main] [Tests.TC04FlightsPage.CheckFoundFlightIsDisplayed(TC04FlightsPage.java:44)] - true
+[INFO] 13-09-2024 04:07:55 [main] [Tests.TC04FlightsPage.CheckFoundFlightIsDisplayed(TC04FlightsPage.java:45)] - Dubai - Cairo
+[INFO] 13-09-2024 04:07:55 [main] [Pages.P04FlightsPage.CheckonLowestToHigherIsEnabled(P04FlightsPage.java:36)] - Lowest to higher is selected: true

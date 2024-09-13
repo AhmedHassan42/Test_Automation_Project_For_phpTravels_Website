@@ -1,0 +1,8 @@
+[INFO] 13-09-2024 05:37:10 [main] [Listeners.ITestmethod.onTestStart(ITestmethod.java:9)] - Test case CheckRoundTripResults started
+[ERROR] 13-09-2024 05:37:39 [main] [Pages.P03HomePage.CheckNoFlightsFoundIsDisplayed(P03HomePage.java:76)] - Expected condition failed: waiting for visibility of element located by By.xpath: //img[contains(@class,'shadow')] (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 128.0.2739.67, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:60951}, msedge: {msedgedriverVersion: 128.0.2739.67 (248489733b87..., userDataDir: C:\Users\ahmed\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60951/devtoo..., se:cdpVersion: 128.0.2739.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ee35e6c37af8a792e6963ec49642e6c2
+[INFO] 13-09-2024 05:37:39 [main] [Listeners.IInvokedmethod.afterInvocation(IInvokedmethod.java:17)] - Test case failed

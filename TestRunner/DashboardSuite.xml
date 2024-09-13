@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Dashboard Suite">
+    <listeners>
+        <listener class-name="Listeners.ITestmethod"/>
+        <listener class-name="Listeners.IInvokedmethod"/>
+    </listeners>
+    <test name="Dashboard Test">
+        <classes>
+            <class name="Tests.TC02DashboardPage"/>
+        </classes>
+    </test>
+</suite>

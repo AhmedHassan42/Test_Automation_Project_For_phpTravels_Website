@@ -1,0 +1,3 @@
+[INFO] 13-09-2024 06:24:35 [main] [Listeners.ITestmethod.onTestStart(ITestmethod.java:9)] - Test case CheckSearchForEconomyTypeResult started
+[INFO] 13-09-2024 06:24:54 [main] [Pages.P04FlightsPage.CheckFlightTypeResult(P04FlightsPage.java:72)] - Type of flight is: Economy
+[INFO] 13-09-2024 06:24:54 [main] [Listeners.ITestmethod.onTestSuccess(ITestmethod.java:13)] - CheckSearchForEconomyTypeResult Test pass

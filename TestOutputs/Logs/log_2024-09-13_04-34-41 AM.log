@@ -1,0 +1,4 @@
+[INFO] 13-09-2024 04:34:41 [main] [Listeners.ITestmethod.onTestStart(ITestmethod.java:9)] - Test caseCheckFlightsResult  started
+[INFO] 13-09-2024 04:34:53 [main] [Tests.TC04FlightsPage.CheckFlightsResult(TC04FlightsPage.java:49)] - true
+[INFO] 13-09-2024 04:34:53 [main] [Tests.TC04FlightsPage.CheckFlightsResult(TC04FlightsPage.java:50)] - Dubai - Cairo
+[INFO] 13-09-2024 04:34:53 [main] [Listeners.ITestmethod.onTestSuccess(ITestmethod.java:13)] - CheckFlightsResult Test success
