@@ -20,7 +20,7 @@ public class P04FlightsPage {
     private final By FromAndDestination= By.xpath("//div[contains(@class,'col-md-6')][2]//p[@class='mb-0'][2]");
     private final By LowestToHigherButton= By.xpath("//button[@data-value='asc']");
     private final By ReturnDateField= By.cssSelector("input#return_date");
-    private final By RoundTripButton= By.cssSelector("input#round-trip");
+    private final By RoundTripButton= By.cssSelector("label[for=round-trip]");
     private final By SearchButton= By.cssSelector("button#flights-search");
     private final By FlightTypeDropDown= By.cssSelector("select#flight_type");
     private final By FlightTypeResults= By.xpath("(//span[contains(@class,'text-capitalize')][3]/strong[@class='text-dark'])[1]");
@@ -63,15 +63,24 @@ public class P04FlightsPage {
         return this;
     }
     public P04FlightsPage ClickOnMoreDetailsButton(){
-        new WebDriverWait(driver, Duration.ofSeconds(5)).until(ExpectedConditions.visibilityOfElementLocated(MoreDetailsButton));
-        Utility.clickOnElement(driver,MoreDetailsButton);
+        try {
+            new WebDriverWait(driver, Duration.ofSeconds(5)).until(ExpectedConditions.visibilityOfElementLocated(MoreDetailsButton));
+            Utility.clickOnElement(driver,MoreDetailsButton);
+        }catch (Exception e){
+            LogsUtil.error("there are no available economy premium trips");
+        }
         return this;
     }
     public boolean CheckFlightTypeResult(String flightType){
-        String FlightText= Utility.getText(driver,FlightTypeResults);
-        LogsUtil.info("Type of flight is: "+ FlightText);
-        if(FlightText.equalsIgnoreCase(flightType)){
-            return true;
-        }else return false;
+        try {
+            String FlightText= Utility.getText(driver,FlightTypeResults);
+            LogsUtil.info("Type of flight is: "+ FlightText);
+            if(FlightText.equalsIgnoreCase(flightType)){
+                return true;
+            }else return false;
+        }catch (Exception e){
+            e.getMessage();
+        }
+       return false;
     }
 }

@@ -42,8 +42,8 @@ public class TC04FlightsPage {
        Assert.assertEquals(getDriver().getCurrentUrl(),getPropertyValue("environment","Dashboard_URL"));
        new P02DashboardPage(getDriver()).ClickOnLogo();
        Assert.assertEquals(getDriver().getCurrentUrl(),getPropertyValue("environment","Home_URL"));
-       new P03HomePage(getDriver()).DubaiDXBFromcity("Dubai").CairoDestinationcity("cairo")
-               .EnterDate("16-10-2024").ClickSearch();
+       new P03HomePage(getDriver()).ClickOnFlights().DenyMessage().DubaiDXBFromcity("Dubai").CairoDestinationcity("cairo")
+               .EnterDate("16-12-2024").ClickSearch();
        Assert.assertTrue(new P03HomePage(getDriver()).CheckFlightsFoundIsDisplayed());
        LogsUtil.info(String.valueOf(new P03HomePage(getDriver()).CheckFlightsFoundIsDisplayed()));
        LogsUtil.info(new P04FlightsPage(getDriver()).GetTextFromAndDestinationFlights());
@@ -59,8 +59,8 @@ public class TC04FlightsPage {
        Assert.assertEquals(getDriver().getCurrentUrl(),getPropertyValue("environment","Dashboard_URL"));
        new P02DashboardPage(getDriver()).ClickOnLogo();
        Assert.assertEquals(getDriver().getCurrentUrl(),getPropertyValue("environment","Home_URL"));
-       new P03HomePage(getDriver()).DubaiDXBFromcity("Dubai").CairoDestinationcity("cairo")
-               .EnterDate("16-10-2024");
+       new P03HomePage(getDriver()).ClickOnFlights().DenyMessage().DubaiDXBFromcity("Dubai").CairoDestinationcity("cairo")
+               .EnterDate("16-12-2024");
        new P04FlightsPage(getDriver()).ClickroundTripButton().EnterReturnDate("18-09-2024")
                .ClickSearch();
        Assert.assertTrue(new P03HomePage(getDriver()).CheckNoFlightsFoundIsDisplayed());
@@ -75,8 +75,8 @@ public class TC04FlightsPage {
        Assert.assertEquals(getDriver().getCurrentUrl(),getPropertyValue("environment","Dashboard_URL"));
        new P02DashboardPage(getDriver()).ClickOnLogo();
        Assert.assertEquals(getDriver().getCurrentUrl(),getPropertyValue("environment","Home_URL"));
-       new P03HomePage(getDriver()).DubaiDXBFromcity("Dubai").CairoDestinationcity("cairo")
-               .EnterDate("16-10-2024");
+       new P03HomePage(getDriver()).ClickOnFlights().DenyMessage().DubaiDXBFromcity("Dubai").CairoDestinationcity("cairo")
+               .EnterDate("16-12-2024");
        new P04FlightsPage(getDriver()).SelectFlightType("Economy").ClickSearch().ClickOnMoreDetailsButton();
        Assert.assertTrue(new P04FlightsPage(getDriver()).CheckFlightTypeResult("economy"));
 
@@ -91,11 +91,11 @@ public class TC04FlightsPage {
        Assert.assertEquals(getDriver().getCurrentUrl(),getPropertyValue("environment","Dashboard_URL"));
        new P02DashboardPage(getDriver()).ClickOnLogo();
        Assert.assertEquals(getDriver().getCurrentUrl(),getPropertyValue("environment","Home_URL"));
-       new P03HomePage(getDriver()).DubaiDXBFromcity("Dubai").CairoDestinationcity("cairo")
-               .EnterDate("16-10-2024");
-       new P04FlightsPage(getDriver()).SelectFlightType("\n" +
-               "Economy Premium").ClickSearch().ClickOnMoreDetailsButton();
+       new P03HomePage(getDriver()).ClickOnFlights().DenyMessage().DubaiDXBFromcity("Dubai").CairoDestinationcity("cairo")
+               .EnterDate("16-12-2024");
+       new P04FlightsPage(getDriver()).SelectFlightType("Economy Premium").ClickSearch().ClickOnMoreDetailsButton();
        Assert.assertTrue(new P04FlightsPage(getDriver()).CheckFlightTypeResult("economy_premium"));
+
 
    }
    @Owner("Ahmed Hassan")
@@ -108,8 +108,8 @@ public class TC04FlightsPage {
        Assert.assertEquals(getDriver().getCurrentUrl(),getPropertyValue("environment","Dashboard_URL"));
        new P02DashboardPage(getDriver()).ClickOnLogo();
        Assert.assertEquals(getDriver().getCurrentUrl(),getPropertyValue("environment","Home_URL"));
-       new P03HomePage(getDriver()).DubaiDXBFromcity("Dubai").CairoDestinationcity("cairo")
-               .EnterDate("16-10-2024");
+       new P03HomePage(getDriver()).ClickOnFlights().DenyMessage().DubaiDXBFromcity("Dubai").CairoDestinationcity("cairo")
+               .EnterDate("16-12-2024");
        new P04FlightsPage(getDriver()).SelectFlightType("Business").ClickSearch().ClickOnMoreDetailsButton();
        Assert.assertTrue(new P04FlightsPage(getDriver()).CheckFlightTypeResult("business"));
 
@@ -124,8 +124,8 @@ public class TC04FlightsPage {
        Assert.assertEquals(getDriver().getCurrentUrl(),getPropertyValue("environment","Dashboard_URL"));
        new P02DashboardPage(getDriver()).ClickOnLogo();
        Assert.assertEquals(getDriver().getCurrentUrl(),getPropertyValue("environment","Home_URL"));
-       new P03HomePage(getDriver()).DubaiDXBFromcity("Dubai").CairoDestinationcity("cairo")
-               .EnterDate("16-10-2024");
+       new P03HomePage(getDriver()).ClickOnFlights().DenyMessage().DubaiDXBFromcity("Dubai").CairoDestinationcity("cairo")
+               .EnterDate("16-12-2024");
        new P04FlightsPage(getDriver()).SelectFlightType("First").ClickSearch().ClickOnMoreDetailsButton();
        Assert.assertTrue(new P04FlightsPage(getDriver()).CheckFlightTypeResult("first"));
 
@@ -134,6 +134,6 @@ public class TC04FlightsPage {
 
    @AfterMethod
    public void quit(){
-       //quitDriver();
+       quitDriver();
    }
 }

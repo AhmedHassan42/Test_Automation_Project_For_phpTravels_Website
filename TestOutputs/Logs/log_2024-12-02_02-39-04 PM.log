@@ -1,0 +1,15 @@
+[INFO] 02-12-2024 14:39:04 [main] [Listeners.ITestmethod.onTestStart(ITestmethod.java:9)] - Test case ValidLoginTC started
+[INFO] 02-12-2024 14:39:06 [main] [Listeners.ITestmethod.onTestSuccess(ITestmethod.java:13)] - ValidLoginTC Test pass
+[INFO] 02-12-2024 14:39:12 [main] [Listeners.ITestmethod.onTestStart(ITestmethod.java:9)] - Test case CheckLogoRedirection started
+[INFO] 02-12-2024 14:39:18 [main] [Listeners.ITestmethod.onTestSuccess(ITestmethod.java:13)] - CheckLogoRedirection Test pass
+[INFO] 02-12-2024 14:39:24 [main] [Listeners.ITestmethod.onTestStart(ITestmethod.java:9)] - Test case CheckAlertMessage started
+[INFO] 02-12-2024 14:39:33 [main] [Listeners.IInvokedmethod.afterInvocation(IInvokedmethod.java:17)] - Test case failed
+[INFO] 02-12-2024 14:39:40 [main] [Listeners.ITestmethod.onTestStart(ITestmethod.java:9)] - Test case CheckFoundFlightIsDisplayed started
+[INFO] 02-12-2024 14:39:50 [main] [Listeners.IInvokedmethod.afterInvocation(IInvokedmethod.java:17)] - Test case failed
+[INFO] 02-12-2024 14:39:57 [main] [Listeners.ITestmethod.onTestStart(ITestmethod.java:9)] - Test case CheckNotFoundFlightIsDisplayed started
+[INFO] 02-12-2024 14:40:07 [main] [Listeners.IInvokedmethod.afterInvocation(IInvokedmethod.java:17)] - Test case failed
+[INFO] 02-12-2024 14:40:14 [main] [Listeners.ITestmethod.onTestStart(ITestmethod.java:9)] - Test case CheckFlightsResult started
+[INFO] 02-12-2024 14:40:23 [main] [Listeners.IInvokedmethod.afterInvocation(IInvokedmethod.java:17)] - Test case failed
+[INFO] 02-12-2024 14:40:29 [main] [Listeners.ITestmethod.onTestStart(ITestmethod.java:9)] - Test case CheckSearchForBusinessTypeResult started
+[INFO] 02-12-2024 14:40:37 [main] [Listeners.IInvokedmethod.afterInvocation(IInvokedmethod.java:17)] - Test case failed
+[INFO] 02-12-2024 14:40:43 [main] [Listeners.ITestmethod.onTestStart(ITestmethod.java:9)] - Test case CheckSearchForEconomyPremiumTypeResult started

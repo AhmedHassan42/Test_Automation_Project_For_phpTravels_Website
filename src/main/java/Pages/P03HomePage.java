@@ -4,17 +4,23 @@ import Utilities.LogsUtil;
 import Utilities.Utility;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import javax.swing.*;
 import java.time.Duration;
 
 public class P03HomePage {
     private final WebDriver driver;
+
     private final By EnterFromCity=By.cssSelector("input.select2-search__field");
+    private final By SelectFromCity=By.xpath("//select[contains(@class,'origin flight_location')]");
+    private final By FlightsButton=By.xpath("//button[contains(@data-bs-target,'flight')]");
     private final By EnterDestinationCity=By.cssSelector("input.select2-search__field");
-    private final By clickEnterFromCity=By.xpath("//span[contains(@class,'select2-container--default') and @data-select2-id=2='combobox']");
-    private final By clickEnterDestination=By.xpath("//span[contains(@class,'select2-container--default') and @data-select2-id=5='combobox']");
+    private final By clickEnterFromCity=By.xpath("//div[contains(@class,'from_flights')]//span[contains(@class,'select2-selection--single')]");
+    private final By clickEnterDestination=By.xpath("//div[contains(@class,'flights_arrival')]//span[contains(@class,'select2-selection--single')]");
     private final By DubaiXNBFromButton= By.xpath("//button[contains(@class,'btn-outline-primary') and .='XNB']");
     private final By DubaiDXBFromButton= By.xpath("//button[contains(@class,'btn-outline-primary') and .='DXB']");
     private final By DubaiXNBDestinationButton= By.xpath("//button[contains(@class,'btn-outline-primary') and .='XNB']");
@@ -31,6 +37,15 @@ public class P03HomePage {
         this.driver=driver;
     }
 
+    public P03HomePage ClickOnFlights(){
+        Utility.clickOnElement(driver,FlightsButton);
+        return this;
+
+    }
+    public P03HomePage SelectFromCity(int FromCity){
+        new Select(Utility.BytoWebelement(driver,SelectFromCity )).selectByIndex(FromCity);
+        return this;
+    }
     public P03HomePage DubaiXNBFromcity(String EnterCity){
         Utility.clickOnElement(driver,clickEnterFromCity);
         Utility.SendData(driver,EnterFromCity,EnterCity);
@@ -50,6 +65,10 @@ public class P03HomePage {
         Utility.SendData(driver,EnterFromCity,EnterCity);
         new WebDriverWait(driver, Duration.ofSeconds(5)).until(ExpectedConditions.visibilityOfElementLocated(DubaiXNBDestinationButton));
         Utility.clickOnElement(driver,DubaiXNBDestinationButton);
+        return this;
+    }
+    public P03HomePage DenyMessage(){
+        Utility.clickOnElement(driver, By.cssSelector("button#cookie_stop"));
         return this;
     }
     public P03HomePage CairoDestinationcity(String EnterCity){
