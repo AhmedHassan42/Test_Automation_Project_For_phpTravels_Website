@@ -38,7 +38,7 @@ public class TC03HomePage {
         Assert.assertEquals(getDriver().getCurrentUrl(),getPropertyValue("environment","Dashboard_URL"));
         new P02DashboardPage(getDriver()).ClickOnLogo();
         Assert.assertEquals(getDriver().getCurrentUrl(),getPropertyValue("environment","Home_URL"));
-        new P03HomePage(getDriver()).ClickOnFlights().DenyMessage().DubaiXNBFromcity("Dubai").CairoDestinationcity("cairo")
+        new P03HomePage(getDriver()).ClickOnFlights().DubaiXNBFromcity("Dubai").CairoDestinationcity("cairo")
                 .EnterDate("16-10-2024").ClickSearch();
         Assert.assertTrue(new P03HomePage(getDriver()).CheckNoFlightsFoundIsDisplayed());
     }
@@ -53,7 +53,7 @@ public class TC03HomePage {
         Assert.assertEquals(getDriver().getCurrentUrl(),getPropertyValue("environment","Dashboard_URL"));
         new P02DashboardPage(getDriver()).ClickOnLogo();
         Assert.assertEquals(getDriver().getCurrentUrl(),getPropertyValue("environment","Home_URL"));
-        new P03HomePage(getDriver()).ClickOnFlights().DenyMessage().DubaiDXBFromcity("Dubai").CairoDestinationcity("cairo")
+        new P03HomePage(getDriver()).ClickOnFlights().DubaiDXBFromcity("Dubai").CairoDestinationcity("cairo")
                 .EnterDate("16-12-2024").ClickSearch();
         Assert.assertTrue(new P03HomePage(getDriver()).CheckFlightsFoundIsDisplayed());
         LogsUtil.info(String.valueOf(new P03HomePage(getDriver()).CheckFlightsFoundIsDisplayed()));
@@ -69,7 +69,7 @@ public class TC03HomePage {
         Assert.assertEquals(getDriver().getCurrentUrl(),getPropertyValue("environment","Dashboard_URL"));
         new P02DashboardPage(getDriver()).ClickOnLogo();
         Assert.assertEquals(getDriver().getCurrentUrl(),getPropertyValue("environment","Home_URL"));
-        new P03HomePage(getDriver()).ClickOnFlights().DenyMessage().DubaiXNBFromcity("Dubai").DubaiDestinationcity("Dubai")
+        new P03HomePage(getDriver()).ClickOnFlights().DubaiXNBFromcity("Dubai").DubaiDestinationcity("Dubai")
                 .EnterDate("16-10-2024").ClickSearch();
         Assert.assertTrue(new P03HomePage(getDriver()).CheckAlertMessage());
         LogsUtil.info(new P03HomePage(getDriver()).Alertmessage());

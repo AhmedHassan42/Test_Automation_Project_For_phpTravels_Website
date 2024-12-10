@@ -1,0 +1,15 @@
+[INFO] 06-12-2024 20:03:54 [main] [Listeners.ITestmethod.onTestStart(ITestmethod.java:9)] - Test case CheckFlightsResult started
+[INFO] 06-12-2024 20:04:13 [main] [Tests.TC04FlightsPage.CheckFlightsResult(TC04FlightsPage.java:45)] - true
+[INFO] 06-12-2024 20:04:13 [main] [Tests.TC04FlightsPage.CheckFlightsResult(TC04FlightsPage.java:46)] - Dubai - Cairo
+[INFO] 06-12-2024 20:04:13 [main] [Listeners.ITestmethod.onTestSuccess(ITestmethod.java:13)] - CheckFlightsResult Test pass
+[INFO] 06-12-2024 20:04:19 [main] [Listeners.ITestmethod.onTestStart(ITestmethod.java:9)] - Test case CheckSearchForBusinessTypeResult started
+[INFO] 06-12-2024 20:04:33 [main] [Pages.P04FlightsPage.CheckFlightTypeResult(P04FlightsPage.java:77)] - Type of flight is: Business
+[INFO] 06-12-2024 20:04:33 [main] [Listeners.ITestmethod.onTestSuccess(ITestmethod.java:13)] - CheckSearchForBusinessTypeResult Test pass
+[INFO] 06-12-2024 20:04:40 [main] [Listeners.ITestmethod.onTestStart(ITestmethod.java:9)] - Test case CheckSearchForEconomyTypeResult started
+[INFO] 06-12-2024 20:04:54 [main] [Pages.P04FlightsPage.CheckFlightTypeResult(P04FlightsPage.java:77)] - Type of flight is: Economy
+[INFO] 06-12-2024 20:04:54 [main] [Listeners.ITestmethod.onTestSuccess(ITestmethod.java:13)] - CheckSearchForEconomyTypeResult Test pass
+[INFO] 06-12-2024 20:05:00 [main] [Listeners.ITestmethod.onTestStart(ITestmethod.java:9)] - Test case CheckSearchForFirstClassTypeResult started
+[INFO] 06-12-2024 20:05:14 [main] [Pages.P04FlightsPage.CheckFlightTypeResult(P04FlightsPage.java:77)] - Type of flight is: First
+[INFO] 06-12-2024 20:05:14 [main] [Listeners.ITestmethod.onTestSuccess(ITestmethod.java:13)] - CheckSearchForFirstClassTypeResult Test pass
+[INFO] 06-12-2024 20:05:20 [main] [Listeners.ITestmethod.onTestStart(ITestmethod.java:9)] - Test case CheckSearchForReturnDateTripInFuture started
+[INFO] 06-12-2024 20:05:32 [main] [Listeners.ITestmethod.onTestSuccess(ITestmethod.java:13)] - CheckSearchForReturnDateTripInFuture Test pass

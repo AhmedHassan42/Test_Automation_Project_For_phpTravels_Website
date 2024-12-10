@@ -1,0 +1,24 @@
+[INFO] 06-12-2024 20:11:17 [main] [Listeners.ITestmethod.onTestStart(ITestmethod.java:9)] - Test case ValidLoginTC started
+[INFO] 06-12-2024 20:11:20 [main] [Listeners.ITestmethod.onTestSuccess(ITestmethod.java:13)] - ValidLoginTC Test pass
+[INFO] 06-12-2024 20:11:26 [main] [Listeners.ITestmethod.onTestStart(ITestmethod.java:9)] - Test case CheckLogoRedirection started
+[INFO] 06-12-2024 20:11:31 [main] [Listeners.ITestmethod.onTestSuccess(ITestmethod.java:13)] - CheckLogoRedirection Test pass
+[INFO] 06-12-2024 20:11:37 [main] [Listeners.ITestmethod.onTestStart(ITestmethod.java:9)] - Test case CheckAlertMessage started
+[INFO] 06-12-2024 20:11:46 [main] [Tests.TC03HomePage.CheckAlertMessage(TC03HomePage.java:75)] - Flying City and Destination City Can`t be same
+[INFO] 06-12-2024 20:11:46 [main] [Listeners.ITestmethod.onTestSuccess(ITestmethod.java:13)] - CheckAlertMessage Test pass
+[INFO] 06-12-2024 20:11:50 [main] [Listeners.ITestmethod.onTestStart(ITestmethod.java:9)] - Test case CheckFoundFlightIsDisplayed started
+[INFO] 06-12-2024 20:12:03 [main] [Listeners.IInvokedmethod.afterInvocation(IInvokedmethod.java:17)] - Test case failed
+[INFO] 06-12-2024 20:12:09 [main] [Listeners.ITestmethod.onTestStart(ITestmethod.java:9)] - Test case CheckNotFoundFlightIsDisplayed started
+[INFO] 06-12-2024 20:12:20 [main] [Listeners.ITestmethod.onTestSuccess(ITestmethod.java:13)] - CheckNotFoundFlightIsDisplayed Test pass
+[INFO] 06-12-2024 20:12:26 [main] [Listeners.ITestmethod.onTestStart(ITestmethod.java:9)] - Test case CheckFlightsResult started
+[INFO] 06-12-2024 20:12:40 [main] [Listeners.IInvokedmethod.afterInvocation(IInvokedmethod.java:17)] - Test case failed
+[INFO] 06-12-2024 20:12:48 [main] [Listeners.ITestmethod.onTestStart(ITestmethod.java:9)] - Test case CheckSearchForBusinessTypeResult started
+[INFO] 06-12-2024 20:13:01 [main] [Pages.P04FlightsPage.CheckFlightTypeResult(P04FlightsPage.java:77)] - Type of flight is: Business
+[INFO] 06-12-2024 20:13:01 [main] [Listeners.ITestmethod.onTestSuccess(ITestmethod.java:13)] - CheckSearchForBusinessTypeResult Test pass
+[INFO] 06-12-2024 20:13:07 [main] [Listeners.ITestmethod.onTestStart(ITestmethod.java:9)] - Test case CheckSearchForEconomyTypeResult started
+[INFO] 06-12-2024 20:13:22 [main] [Pages.P04FlightsPage.CheckFlightTypeResult(P04FlightsPage.java:77)] - Type of flight is: Economy
+[INFO] 06-12-2024 20:13:22 [main] [Listeners.ITestmethod.onTestSuccess(ITestmethod.java:13)] - CheckSearchForEconomyTypeResult Test pass
+[INFO] 06-12-2024 20:13:28 [main] [Listeners.ITestmethod.onTestStart(ITestmethod.java:9)] - Test case CheckSearchForFirstClassTypeResult started
+[INFO] 06-12-2024 20:13:41 [main] [Pages.P04FlightsPage.CheckFlightTypeResult(P04FlightsPage.java:77)] - Type of flight is: First
+[INFO] 06-12-2024 20:13:41 [main] [Listeners.ITestmethod.onTestSuccess(ITestmethod.java:13)] - CheckSearchForFirstClassTypeResult Test pass
+[INFO] 06-12-2024 20:13:47 [main] [Listeners.ITestmethod.onTestStart(ITestmethod.java:9)] - Test case CheckSearchForReturnDateTripInFuture started
+[INFO] 06-12-2024 20:13:59 [main] [Listeners.ITestmethod.onTestSuccess(ITestmethod.java:13)] - CheckSearchForReturnDateTripInFuture Test pass

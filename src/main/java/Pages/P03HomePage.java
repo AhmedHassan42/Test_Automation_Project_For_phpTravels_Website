@@ -68,7 +68,12 @@ public class P03HomePage {
         return this;
     }
     public P03HomePage DenyMessage(){
-        Utility.clickOnElement(driver, By.cssSelector("button#cookie_stop"));
+        try {
+            Utility.clickOnElement(driver, By.cssSelector("button#cookie_stop"));
+
+        }catch (Exception e){
+            e.getMessage();
+        }
         return this;
     }
     public P03HomePage CairoDestinationcity(String EnterCity){
@@ -97,6 +102,7 @@ public class P03HomePage {
         return false;
     }
     public boolean CheckFlightsFoundIsDisplayed(){
+        new WebDriverWait(driver, Duration.ofSeconds(5)).until(ExpectedConditions.visibilityOfElementLocated(Foundflight));
         return driver.findElement(Foundflight).isDisplayed();
     }
     public String Alertmessage(){

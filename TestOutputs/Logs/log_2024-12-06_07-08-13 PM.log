@@ -1,0 +1,2 @@
+[INFO] 06-12-2024 19:08:15 [main] [Listeners.ITestmethod.onTestStart(ITestmethod.java:9)] - Test case CheckSearchForEconomyPremiumTypeResult started
+[INFO] 06-12-2024 19:08:20 [main] [Listeners.IInvokedmethod.afterInvocation(IInvokedmethod.java:17)] - Test case failed
